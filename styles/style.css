@@ -28,9 +28,6 @@ nav{
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
     gap: 10px;
-
-
-
 }
 .arch-title1{
     
@@ -60,7 +57,11 @@ padding: 5px;
     width: calc(100%-400px);
     height: 450px;
 }
+
+
 /* FEATURES SECTION */
+
+
 .ashy{
     color: orange;
 }
@@ -107,7 +108,11 @@ input{
 .header{
     background-color: bisque;
 }
+
+
 /* SPECIAL FEATURES SECTION */
+
+
 .spfeatures{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -160,7 +165,11 @@ padding-left: 10px;
     border: none;
     border-radius: 5px;
 }
+
+
 /* FACTS STYLE */
+
+
 .facts-title h1{
     font-size: 30px;   
 }
@@ -186,7 +195,11 @@ padding-left: 10px;
     height: 170px;
     width:150px;   
 }
+
+
 /* FOOTER SECTION */
+
+
 .foot-sponsor{
     display: grid;    
     grid-template-columns: repeat(1, 1fr);
@@ -222,7 +235,10 @@ margin-top: 2px;
     text-align: center;
 }
 
+
 /* RESPONSIVE MEDIA QUERY */
+
+
 .hide{
     display: none;
 }
@@ -283,8 +299,155 @@ margin-top: 2px;
         width: 320px;
         height: 250px;
     }
-    /* Features */
 
+    /* Features */
+    .features {                  
+        flex-direction: column-reverse;
+        padding: 10px;
+        padding-left: 15px;
+        margin: 0;
+        gap: 10px;
+    }
+    
+    .team{
+        grid-template-rows: repeat(4,1fr);
+    }
+    .team div{
+        grid-column: 1;
+    }
+    .team-title{
+        font-size: 30px;
+    }
+    .team img {
+        padding-top: 20px;
+        padding-left: 15px;
+        width: 240px;
+        height: 240px;
+    }
+
+    /* SPECIAL FEATURES */
+
+    .spfeatures{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5px;
+    }
+    .spfeat-title h1{
+        margin: 20px;
+        border-left: 5px solid orange;
+        font-size: 35px;
+        margin-left: auto;
+    }
+    .spfeat-subtitle{
+        padding: 10px;
+        padding-left: 15px;
+        width: 300px;
+    }
+    .arch-spfeat1{
+        width: 300px;
+        padding: 30px;
+        margin:2px;   
+    }
+    .arch-spfeat3 { 
+        padding: 10px;    
+    }
+    .arch-spfeat3 img {  
+        grid-area: 3 / 1 / 5 / 1;
+        padding-left: 30px;  
+        padding-bottom: 5px;
+        width: 280px;
+        height: 350px;
+    }
+    .arch-spfeat{
+    padding-left: 0;
+    
+    }
+    .bottom { 
+        grid-area: 4 / 1 / 4 / 1; 
+        /* to control the bottom caption */
+        padding-left: 30px;
+        padding-bottom: 5px;
+    }
+    .bottom button{
+        font-size: 25px;
+    }
+
+
+/* RESPONSIVE FACTS */
+
+    .facts-title h1{
+        font-size: 35px;  
+        width: 180px; 
+        
+    }
+
+    .facts{
+        margin: 15px 20px;
+        padding: 15px;
+        
+    }
+    .awards{
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .award{
+        padding: 5px 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        height: 150px;
+        width:130px;   
+    }
+
+
+
+/* RESPONSIVE FOOTER SECTION */
+
+
+.foot-sponsor{
+
+    justify-items: left;
+    gap: 10px;
+    padding-top: 0;
+    margin:0;
+    padding-left: 30px;
+}
+.foot-title{
+    padding-top: 40px;
+font-size: 24px; 
+margin-top: 2px;   
+}
+.foot-subtitle{
+   flex-direction: column;
+   text-align: justify;
+   width: 80vw;
+}
+.foot-icon{
+ padding: 15px;
+ padding-left:0;
+}
+
+.foot-partners{
+    flex-direction: column;
+    width: auto;
+    padding-left: 0;
+    padding-top: 0;
+
+}
+.foot-copyright{
+    
+   
+    padding: 1px 1vw;
+    border: 1px solid bisque;
+    text-align: center;
+    
+    
+}
+
+
+    
 }
 @media screen and (min-width: 577px) and (max-width: 992px){
     nav{
@@ -341,6 +504,165 @@ margin-top: 2px;
         width: 600px;
         height: 380px;
     }
+
 /* Features */
+.features {                  
+    flex-direction: column-reverse;
+    padding: 10px;
+    padding-left: 15px;
+    margin: 0;
+    gap: 10px;
+}
+
+.team{
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(1,700px);
+}
+.team div{
+    grid-column: 1;
+}
+.team-title{
+    font-size: 65px;
+    padding-left: 30px;
+}
+.team-description{
+    padding-left: 30px;
+}
+.team img {
+    padding-top: 30px;
+    padding-left: 50px;
+    width: 600px;
+    height: 550px;
+}
+input{
+    margin-left: 30px; 
+}
+
+
+ /* SPECIAL FEATURES */
+
+ .spfeatures{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.spfeat-title h1{
+    margin: 20px;
+    margin-left:1px;
+    font-size: 45px;
+    padding-left: 5px;
+}
+.spfeat-subtitle{
+    padding: 2px;
+    padding-left: 10px;
+    width: 600px;
+}
+.arch-spfeat1{
+    width: 577px;
+    padding: 50px;   
+}
+.arch-spfeat3 { 
+    padding: 20px;    
+}
+.arch-spfeat3 img {  
+    grid-area: 1 / 1 / 4 / 1;
+    padding-top: 2px;
+    padding-left: 90px;  
+    padding-bottom: 5px;
+    width: 400px;
+    height: 550px;
+}
+.arch-spfeat{
+padding-left: 10px;
+
+}
+.bottom { 
+    grid-area: 3 / 1 / 4 / 1; 
+    /* to control the bottom caption */
+    padding-left: 90px;
+    padding-bottom: 5px;
+}
+.bottom button{
+    font-size: 40px;
+}
+
+/* RESPONSIVE FACTS */
+
+.facts-title h1{
+    font-size: 45px;  
+    width: 300px;
+    padding-left: 70px; 
+    
+}
+.facts-title p{
+    padding-left: 70px; 
+}
+
+.facts{
+    margin: 15px 20px;
+    padding: 15px;
+    
+}
+.awards{
+    flex-direction: column;
+    gap: 20px;
+    align-items: left;
+    padding-left: 70px;
+}
+.award{
+    padding: 5px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    height: 170px;
+    width:150px;   
+}
+
+
+/* RESPONSIVE FOOTER SECTION */
+
+
+.foot-sponsor{
+
+    justify-items: left;
+    gap: 15px;
+    padding-top: 0;
+    margin:0;
+    padding-left: 30px;
+}
+.foot-sponsor .foot-copyright{
+padding-left: 0;
+}
+.foot-title{
+    padding-top: 40px;
+font-size: 35px; 
+margin-top: 2px;   
+}
+.foot-subtitle{
+   flex-direction: column;
+   text-align: justify;
+   width: 80vw;
+}
+.foot-icon{
+ padding: 15px;
+ padding-left:0;
+}
+
+.foot-partners{
+    flex-direction: column;
+    width: auto;
+    padding-left: 0;
+    padding-top: 0;
+
+}
+.foot-copyright{
+    
+   
+    padding: 1px 1vw;
+    border: 1px solid bisque;
+    text-align: center;
+    width: 90vw;
+    
+}
 
 }
